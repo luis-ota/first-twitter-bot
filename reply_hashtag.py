@@ -3,6 +3,7 @@ import time
 import logging
 import dotenv
 import os
+import random
 
 
 dotenv.load_dotenv(dotenv.find_dotenv())
@@ -34,7 +35,11 @@ class MyStreamListener(tweepy.StreamListener):
                     reply = "slk, mlk é abusado em campo https://twitter.com/i/status/1379858855933452288/video/1"
             
             if user_do_mlk != 'RT':
-                reply = "slk, mlk é abusado em campo https://twitter.com/i/status/1379858855933452288/video/1"
+
+                reply_1 = "slk, mlk é abusado em campo https://twitter.com/i/status/1379858855933452288/video/1"
+                reply_2 = "slk, mlk é abusado em campo https://twitter.com/i/status/1388566886372237312/video/1"
+                replys = [reply_1, reply_2]
+                reply = random.choice(replys)
                 api.update_status(status=reply, in_reply_to_status_id=status.id,
                                   auto_populate_reply_metadata=True)
                                 
