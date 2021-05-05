@@ -44,10 +44,10 @@ class MyStreamListener(tweepy.StreamListener):
                                   auto_populate_reply_metadata=True)
                                 
                 logger.info(f"Answering to {status.user.name}")
-                logger.info("Message sended")
-                logger.info("Retrieving mentions")              
+                             
             else:
                 logger.info(f"Skiping RT")
+            
             time.sleep(169)
         except tweepy.TweepError as e:
             print(e.reason, '--')
