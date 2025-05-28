@@ -7,6 +7,10 @@ Este projeto é um bot simples para o Twitter desenvolvido em Python, utilizando
 * Monitoramento de tweets com uma hashtag definida.
 * Resposta automática a esses tweets com uma mensagem predefinida.
 
+## Resultados
+
+Este bot foi utilizado no perfil [@MusicaFoxBot](https://x.com/MusicaFoxBot), onde alcançou quase 5.000 seguidores de forma 100% orgânica, apenas interagindo com tweets relacionados a uma hashtag de meme.
+
 ## Pré-requisitos
 
 * Python 3.6 ou superior.
@@ -41,5 +45,17 @@ Este projeto é um bot simples para o Twitter desenvolvido em Python, utilizando
    access_token_secret = 'SEU_ACCESS_TOKEN_SECRET'
    ```
 
+## Uso
+
+Execute o script principal para iniciar o bot:
+
+```bash
+python reply_hashtag.py
+```
 
 O bot começará a monitorar o Twitter em busca da hashtag especificada e responderá automaticamente aos tweets encontrados.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
